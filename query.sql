@@ -183,6 +183,32 @@ INSERT INTO product (name, price, description, productSize, stock, isFlashSale, 
 ('Chicken Teriyaki', 92000, 'Teriyaki chicken with pineapple and onions', 'Regular', 45, true, 'Hot', 1),
 ('Ultimate Meat', 105000, 'Five types of meat with extra cheese', 'Regular', 35, false, 'Hot', 1);
 
+INSERT INTO product (name, price, description, productSize, stock, isFlashSale, tempelatur, category_productId) VALUES
+('Spaghetti Carbonara', 45000, 'Creamy carbonara with bacon', 'Regular', 40, false, 'Hot', 2),
+('Fettuccine Alfredo', 42000, 'Classic alfredo sauce with parmesan', 'Regular', 45, false, 'Hot', 2),
+('Spaghetti Bolognese', 45000, 'Rich meat sauce with herbs', 'Regular', 50, false, 'Hot', 2),
+('Penne Arrabiata', 40000, 'Spicy tomato sauce with garlic', 'Regular', 35, false, 'Hot', 2),
+('Lasagna Beef', 55000, 'Layers of pasta with beef and cheese', 'Regular', 30, false, 'Hot', 2),
+('Chicken Pesto Pasta', 48000, 'Penne with chicken and pesto sauce', 'Regular', 40, false, 'Hot', 2),
+('Mac and Cheese', 38000, 'Creamy macaroni with cheddar', 'Regular', 50, false, 'Hot', 2),
+('Seafood Marinara', 65000, 'Mixed seafood in tomato sauce', 'Regular', 25, false, 'Hot', 2),
+('Garlic Bread', 25000, 'Toasted bread with garlic butter', 'Regular', 60, false, 'Hot', 3),
+('Chicken Wings', 45000, '8 pieces of spicy buffalo wings', 'Regular', 45, false, 'Hot', 3),
+('Mozzarella Sticks', 35000, '6 pieces with marinara sauce', 'Regular', 50, false, 'Hot', 3),
+('Onion Rings', 30000, 'Crispy breaded onion rings', 'Regular', 55, false, 'Hot', 3),
+('Bruschetta', 32000, 'Toasted bread with tomato and basil', 'Regular', 40, false, 'Hot', 3),
+('Cheese Breadsticks', 28000, 'Breadsticks with melted cheese', 'Regular', 50, false, 'Hot', 3),
+('Chicken Tenders', 42000, '5 pieces with honey mustard', 'Regular', 45, false, 'Hot', 3),
+('Chocolate Lava Cake', 35000, 'Warm chocolate cake with ice cream', 'Regular', 30, false, 'Hot', 4),
+('Tiramisu', 38000, 'Classic Italian coffee dessert', 'Regular', 25, false, 'Cold', 4),
+('Cheesecake', 35000, 'New York style cheesecake', 'Regular', 30, false, 'Cold', 4),
+('Brownie Sundae', 32000, 'Warm brownie with vanilla ice cream', 'Regular', 35, false, 'Hot', 4),
+('Apple Pie', 30000, 'Classic apple pie with cinnamon', 'Regular', 40, false, 'Hot', 4),
+('Coca Cola', 12000, 'Refreshing cola drink', 'Regular', 100, false, 'Cold', 5),
+('Iced Tea', 10000, 'Fresh brewed iced tea', 'Regular', 100, false, 'Cold', 5),
+('Orange Juice', 15000, 'Fresh squeezed orange juice', 'Regular', 80, false, 'Cold', 5),
+('Mineral Water', 8000, 'Bottled mineral water', 'Regular', 150, false, 'Cold', 5),
+('Cappuccino', 25000, 'Italian style coffee', 'Regular', 60, false, 'Hot', 5);
 
 INSERT INTO imageProduct (image, productId) VALUES
 ('https://www.freepik.com/free-photo/large-mixed-pizza-with-meat_6087692.htm#fromView=search&page=1&position=46&uuid=ff40f714-e977-49da-8184-beefdd310aa9&query=pizza', 1),
