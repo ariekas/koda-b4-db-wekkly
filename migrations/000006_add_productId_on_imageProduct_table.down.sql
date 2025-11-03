@@ -1,0 +1,1 @@
+ALTER TABLE imageProduct DROP COLUMN productId;

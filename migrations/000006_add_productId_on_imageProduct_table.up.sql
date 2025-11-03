@@ -1,0 +1,1 @@
+ALTER TABLE imageProduct ADD FOREIGN KEY (productId) REFERENCES product (id);

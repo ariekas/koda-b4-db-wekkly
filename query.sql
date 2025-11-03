@@ -33,13 +33,13 @@
 --   updated_At DATE
 -- );
 
-CREATE TABLE imageProduct (
-  id SERIAL PRIMARY KEY,
-  image TEXT,
-  productId INT,
-  created_At DATE,
-  updated_At DATE
-);
+-- CREATE TABLE imageProduct (
+--   id SERIAL PRIMARY KEY,
+--   image TEXT,
+--   productId INT,
+--   created_At DATE,
+--   updated_At DATE
+-- );
 
 CREATE TABLE rating (
   id SERIAL PRIMARY KEY,
@@ -116,7 +116,7 @@ ALTER TABLE rating ADD FOREIGN KEY (productId) REFERENCES product (id);
 
 ALTER TABLE rating ADD FOREIGN KEY (userId) REFERENCES users (id);
 
-ALTER TABLE imageProduct ADD FOREIGN KEY (productId) REFERENCES product (id);
+-- ALTER TABLE imageProduct ADD FOREIGN KEY (productId) REFERENCES product (id);
 
 ALTER TABLE orderItems ADD FOREIGN KEY (orderId) REFERENCES orders (id);
 
