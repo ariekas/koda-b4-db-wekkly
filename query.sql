@@ -19,19 +19,19 @@
 --   updated_At DATE
 -- );
 
-CREATE TABLE product (
-  id SERIAL PRIMARY KEY,
-  name VARCHAR(100),
-  price NUMERIC(10,2),
-  description TEXT,
-  productSize VARCHAR(10),
-  stock INT,
-  isFlashSale BOOLEAN,
-  tempelatur VARCHAR(59),
-  category_productId INT,
-  created_At DATE,
-  updated_At DATE
-);
+-- CREATE TABLE product (
+--   id SERIAL PRIMARY KEY,
+--   name VARCHAR(100),
+--   price NUMERIC(10,2),
+--   description TEXT,
+--   productSize VARCHAR(10),
+--   stock INT,
+--   isFlashSale BOOLEAN,
+--   tempelatur VARCHAR(59),
+--   category_productId INT,
+--   created_At DATE,
+--   updated_At DATE
+-- );
 
 CREATE TABLE imageProduct (
   id SERIAL PRIMARY KEY,
@@ -126,7 +126,7 @@ ALTER TABLE orderItems ADD FOREIGN KEY (productId) REFERENCES product (id);
 
 ALTER TABLE delivery ADD FOREIGN KEY (orderId) REFERENCES orders (id);
 
-ALTER TABLE users ADD FOREIGN KEY (profileId) REFERENCES profile (id);
+-- ALTER TABLE users ADD FOREIGN KEY (profileId) REFERENCES profile (id);
 
 ALTER TABLE product ADD FOREIGN KEY (category_productId) REFERENCES category_product (id);
 
